@@ -1,4 +1,4 @@
-package com.telstra.codechallenge;
+	package com.telstra.codechallenge;
 
 import com.intuit.karate.junit5.Karate;
 
@@ -18,4 +18,8 @@ public class FunctionalIT {
     return Karate.run("quotes").relativeTo(getClass());
   }
 
+  @Karate.Test
+  Karate testUsers() {
+	  return Karate.run("user").relativeTo(getClass());
+  }
 }
